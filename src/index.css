@@ -1,0 +1,99 @@
+.app {
+    max-width: 600px;
+    margin:50px auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px;
+    background: #384152;
+    border-radius: 10px;
+}
+.header {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    color:#f0f0f0
+}
+input,
+button {
+    padding:8px;
+    margin:5px
+}
+ul {
+    list-style: none;
+    padding:0; 
+    width:100%;
+    margin:0;
+}
+.todo-item {
+    background-color: #111828;
+    color:#fff;
+    padding:10px;
+    border-radius: 10px;
+    margin:5px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.item-button {
+    background-color: transparent;
+    border: none;
+    padding:2px;
+    color:#b50101;
+    font-size:14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s ease ;
+}
+.item-button:hover {
+    color:rgb(0, 255, 242);
+    cursor:pointer; 
+    transform:scale(1.3);
+    filter:drop-shadow(0 0 0.75rem rgb(0, 255, 242))
+}
+.item-text {
+    margin:10px 5px;
+}
+.item-buttons {
+    margin:5px;
+}
+.edit-button {
+    background-image:linear-gradient(to right,#c87ab7 0%, #733A8A 50%, #461c84 100% );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 1s ease;
+    
+}
+.edit-button:hover {
+    background-image:linear-gradient(to right,#6397aa 0%, #3a518a 50%, #2b0c9c 100% );
+    transform:scale(1.3);
+    backdrop-filter:drop-shadow(0 0 0.75rem #6397aa) 
+}
+.add-todo-form {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin-top:30px;
+}
+.add-todo-input {
+    width:80%;
+    border-radius:10px;
+    background-color:#262d38 ;
+    outline:none;
+    border:none;
+    padding:10px;
+    height: 30px;
+    color:#636C7B;
+    font-size:16px;
+}
+.add-todo-input::placeholder {
+    color:#636C7B;
+    font-size: 16px;
+}
+.search-input {
+    width:60%;
+}
