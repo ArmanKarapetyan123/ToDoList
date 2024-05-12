@@ -19,12 +19,15 @@ import AddTodo from './AddTodo/AddTodo'
     const handleEdit = (id, item) => {
       console.log(`Edit ${id} - ${item}`);
     }
+    const handleAddTask = () => {
+      console.log(`Add Task`);
+    }
 
     return (
     <div className='app'>
       <Header text={headerText}/>
-      <ToDoList todoItems={todoItems} handleDelete={handleDelete} handleEdit={handleEdit}/>
-      <AddTodo/>
+      <ToDoList todoItems={todoItems} handleDelete={handleDelete} handleEdit={handleEdit} />
+      <AddTodo handleAddTask={handleAddTask}/>
     </div>
     )
   }
